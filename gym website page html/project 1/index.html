@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahi Fitness </title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<style>
+    /* css reset */
+    body {
+
+        color: aliceblue;
+        font-family: 'Ubuntu', sans-serif;
+
+        padding: 0px;
+        background: url('img/bg.png.jpg');
+        height: 100vh;
+        width: 100vw;
+
+
+
+    }
+
+    .left {
+        position: absolute;
+        left: 29px;
+        top: 19px;
+        display: inline-block;
+        border: 2px solid rgb(65, 57, 86);
+        line-height: 20px;
+        font-size: 19px;
+        /* margin: auto; */
+    }
+
+    .mid {
+        display: block;
+        width: 38%;
+        margin: 13px auto;
+        border: 2px solid rgb(19, 139, 109);
+        font-size: small;
+        background-color: rgb(17, 126, 97);
+        border-radius: 25px;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 19px;
+        display: inline-block;
+        /* border: 2px solid rgb(139, 19, 119); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        /* display: inline-block; */
+        text-decoration: none;
+        padding: 10px 10px;
+    }
+
+    .navbar li a:hover{
+
+        text-decoration: underline;
+        color: darkgray;
+
+    }
+
+    .left img {
+        width: 34px;
+        margin: 3px;
+        padding: auto;
+        float: left;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .btn {
+        margin: 2px 4px;
+        color: white;
+        background-color: rgba(17, 16, 16, 0);
+        padding: 2px 3px;
+        border: 1px solid white;
+        border-radius: 12px;
+        /* margin: 8px; */
+        cursor: pointer;
+        font-size: 20px;
+
+
+    }
+
+    .btn:hover {
+        background-color: rgb(38, 40, 38);
+        color: rgb(166, 166, 182);
+        border: 3px salmon;
+        border-radius: 19px;
+    }
+
+    .container {
+        /* border: 2px solid rgb(255, 255, 255); */
+        margin: 70px 21px;
+        padding: 2px 5px;
+        width: 30%;
+        border-radius: 112px;
+
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 15px;
+        border-radius: 17px;
+
+
+    }
+    /* .btn1{
+        margin: 2px 160px;
+        color: white;
+        background-color: rgba(17, 16, 16, 0);
+        padding: 2px 3px;
+        border: 1px solid white;
+        border-radius: 12px;
+        
+        cursor: pointer;
+        font-size: 20px;
+
+
+
+    }
+    .btn1:hover {
+        background-color: rgb(38, 40, 38);
+        color: rgb(166, 166, 182);
+        border: 3px salmon;
+        border-radius: 19px;
+    } */
+    h1{
+        color: rgb(214, 214, 214);
+        text-align: center;
+        font-size: x-large;
+    }
+    h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 300px;
+        margin: 13px auto;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 8px;
+        background-color: rgba(244, 241, 241, 0.167);
+        color: white;
+    }
+    .container button:hover{
+        background-color: gray;
+        border: 2px solid wheat;
+        border-radius: 9px;
+    }
+    .container label{
+        margin: 1px 20px;
+    }
+
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym.png.png" alt="">
+            <div>Mahi fitness</div>
+        </div>
+
+        <!-- mid box for navibar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="https://www.google.com/" class="active">Home</a></li>
+                <li><a href="https://www.youtube.com/">About Us</a></li>
+                <li><a href="https://www.instagram.com/">Fitness Center</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+
+        <h1>Join the best gym of Delhi now</h1>
+        <h2>To join fill this form</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your mobile number">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your email ">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+
+            </div>
+            
+            <button class="btn1">Submit </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
